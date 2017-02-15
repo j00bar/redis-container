@@ -1,0 +1,3 @@
+---
+- name: Install redis
+  apk: name="{{ redis_package_name }}" state=latest update_cache=yes
