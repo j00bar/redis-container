@@ -6,7 +6,7 @@ REDIS_SAVE_FREQUENCIES:
   - {seconds: 900, changes: 1}
   - {seconds: 300, changes: 10}
   - {seconds: 60, changes: 10000}
-REDIS_STOP_WRITES_ON_BGSAVE_ERROR: yes
+REDIS_STOP_WRITES_ON_BGSAVE_ERROR: "yes"
 REDIS_DB_FILENAME: "dump.rdb"
 REDIS_DB_DIRECTORY: /var/lib/redis/
 REDIS_MASTER_PASSWORD: ""
