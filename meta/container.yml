@@ -1,8 +1,7 @@
-redis:
-  image: centos:7
-  ports:
-    - "6379"
-  user: 'redis'
-  command: ['/usr/bin/dumb-init', '/usr/bin/redis-server', '/etc/redis.conf', '--daemonize no']
-  volumes:
-    - "/var/lib/redis"
+from: centos:7
+ports:
+  - "6379"
+user: 'redis'
+command: ['/usr/bin/dumb-init', '/usr/bin/redis-server', '/etc/redis.conf', '--daemonize no']
+volumes:
+  - "/var/lib/redis"
